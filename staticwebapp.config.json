@@ -1,5 +1,15 @@
 {
     "navigationFallback": {
         "rewrite": "/index.html"
-    }
+    },
+    "routes": [
+        {
+            "route": "/",
+            "allowedRoles": ["authenticated"]
+        },
+        {
+            "route": "/api/info",
+            "allowedRoles": ["authenticated"]
+        }
+    ]
 }
